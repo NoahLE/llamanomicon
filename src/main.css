@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@import "./style/introjs.css";
+@import "./style/heroui.css";
+@import "./style/theme.css";

@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Folders
+node_modules/
+
+# Build artifacts
+dist/
+dist-ssr/
+output/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Project files
+*.local
+
+# Playwright
+# Baseline snapshots in e2e/snapshots/ ARE committed (visual regression source of truth).
+# Test artifacts (diffs, actual images from failed runs, reports, traces) are not.
+test-results/
+playwright-report/
+e2e/snapshots/**/*-diff.png
+e2e/snapshots/**/*-actual.png
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

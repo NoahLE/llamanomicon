@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Inter";
+  src:
+    local("Inter"),
+    url("./style/inter.ttf") format("ttf");
+}
+
+:root {
+  font-family: "Iter", var(--font-sans);
+  font-size: var(--text-base);
+}

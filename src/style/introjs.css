@@ -1,0 +1,161 @@
+/* ── Intro.js tour tokens (dark mode defaults) ──────────────────────── */
+:root {
+  --introjs-bg: #000000;
+  --introjs-border: rgba(255, 255, 255, 0.12);
+  --introjs-text: rgba(255, 255, 255, 0.92);
+  --introjs-muted: rgba(255, 255, 255, 0.5);
+  --introjs-divider: rgba(255, 255, 255, 0.1);
+  --introjs-btn-bg: oklch(25% 0.01 240);
+  --introjs-btn-border: rgba(255, 255, 255, 0.16);
+  --introjs-btn-text: rgba(255, 255, 255, 0.85);
+  --introjs-btn-hover-bg: oklch(32% 0.01 240);
+  --introjs-btn-hover-text: rgba(255, 255, 255, 0.95);
+  --introjs-highlight-shadow:
+    0 0 0 4px rgba(255, 255, 255, 0.06), 0 0 0 2px rgba(255, 255, 255, 0.18),
+    0 0 24px rgba(255, 255, 255, 0.08);
+}
+
+/* ── Intro.js tour tokens (light mode overrides) ────────────────────── */
+[data-theme="light"] {
+  --introjs-bg: #ffffff;
+  --introjs-border: rgba(0, 0, 0, 0.1);
+  --introjs-text: #212121;
+  --introjs-muted: #616161;
+  --introjs-divider: #e0e0e0;
+  --introjs-btn-bg: #f4f4f4;
+  --introjs-btn-border: #bdbdbd;
+  --introjs-btn-text: #424242;
+  --introjs-btn-hover-bg: #e0e0e0;
+  --introjs-btn-hover-text: #212121;
+  --introjs-highlight-shadow:
+    0 0 0 4px rgba(0, 0, 0, 0.04), 0 0 0 2px rgba(0, 0, 0, 0.18),
+    0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Intro.js tooltip box ────────────────────────────────────────────── */
+.introjs-tooltip {
+  background-color: var(--introjs-bg);
+  border: 1px solid var(--introjs-border);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+  color: var(--introjs-text);
+}
+
+.introjs-tooltip-title {
+  color: var(--introjs-text);
+}
+
+.introjs-tooltiptext {
+  color: var(--introjs-text);
+}
+
+/* ── Arrows — match tooltip background ──────────────────────────────── */
+.introjs-arrow.top,
+.introjs-arrow.top-right,
+.introjs-arrow.top-middle {
+  border-bottom-color: var(--introjs-bg);
+}
+
+.introjs-arrow.right,
+.introjs-arrow.right-bottom {
+  border-left-color: var(--introjs-bg);
+}
+
+.introjs-arrow.bottom,
+.introjs-arrow.bottom-right,
+.introjs-arrow.bottom-middle {
+  border-top-color: var(--introjs-bg);
+}
+
+.introjs-arrow.left,
+.introjs-arrow.left-bottom {
+  border-right-color: var(--introjs-bg);
+}
+
+/* ── Button bar ─────────────────────────────────────────────────────── */
+.introjs-tooltipbuttons {
+  border-top-color: var(--introjs-divider);
+}
+
+.introjs-button {
+  background-color: var(--introjs-btn-bg);
+  border-color: var(--introjs-btn-border);
+  color: var(--introjs-btn-text);
+  text-shadow: none;
+}
+
+.introjs-button:hover {
+  background-color: var(--introjs-btn-hover-bg);
+  border-color: var(--introjs-btn-border);
+  color: var(--introjs-btn-hover-text);
+}
+
+.introjs-button:focus {
+  background-color: var(--introjs-btn-hover-bg);
+  border-color: var(--introjs-btn-border);
+  color: var(--introjs-btn-hover-text);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.1);
+}
+
+.introjs-button:active {
+  background-color: var(--introjs-btn-bg);
+  border-color: var(--introjs-btn-border);
+  color: var(--introjs-btn-text);
+}
+
+.introjs-disabled,
+.introjs-disabled:hover,
+.introjs-disabled:focus {
+  background-color: var(--introjs-btn-bg);
+  border-color: var(--introjs-btn-border);
+  color: var(--introjs-muted);
+}
+
+/* ── Skip / close button ─────────────────────────────────────────────── */
+.introjs-skipbutton {
+  color: var(--introjs-muted);
+}
+
+.introjs-skipbutton:hover,
+.introjs-skipbutton:focus {
+  color: var(--introjs-text);
+}
+
+/* ── Bullet dots ─────────────────────────────────────────────────────── */
+.introjs-bullets ul li a {
+  background: var(--introjs-muted);
+}
+
+.introjs-bullets ul li a:hover,
+.introjs-bullets ul li a:focus,
+.introjs-bullets ul li a.active {
+  background: var(--introjs-text);
+}
+
+/* ── Helper layer highlight ring ─────────────────────────────────────── */
+.introjs-helperLayer {
+  box-shadow: var(--introjs-highlight-shadow);
+}
+
+/* ── "Don't show again" label ────────────────────────────────────────── */
+.introjs-dontShowAgain label {
+  background-color: transparent;
+  color: var(--introjs-muted);
+}
+
+/* ── Base ───────────────────────────────────────────────────────────── */
+html,
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

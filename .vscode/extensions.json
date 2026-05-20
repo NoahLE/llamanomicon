@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "cliffordfajardo.highlight-line-vscode",
+    "oderwat.indent-rainbow",
+    "vscode-icons-team.vscode-icons",
+    "dbaeumer.vscode-eslint",
+    "yoavbls.pretty-ts-errors",
+    "formulahendry.auto-rename-tag",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "christian-kohler.npm-intellisense",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "vitest.explorer"
+  ]
+}
