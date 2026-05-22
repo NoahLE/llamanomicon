@@ -4,3 +4,4 @@ minimumReleaseAgeExclude:
   - tmp@0.2.4
   - lodash@4.17.23
   - lodash@4.17.24
+  - vite@8.0.14
