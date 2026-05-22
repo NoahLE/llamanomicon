@@ -6,3 +6,4 @@ node_modules
 llm-prompts
 output
 specs
+pnpm-lock.yaml

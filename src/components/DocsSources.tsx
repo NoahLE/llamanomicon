@@ -27,6 +27,10 @@ const podcasts: PageLink[] = [
     link: "https://syntax.fm/",
   },
   {
+    name: "Real Python",
+    link: "https://realpython.com/podcasts/rpp/",
+  },
+  {
     name: "Talk Python to Me",
     link: "https://talkpython.fm/",
   },
@@ -60,8 +64,10 @@ function convertToLinks(links: PageLink[]) {
     <ul className="list-disc pl-5">
       {links.map((link) => (
         <li key={link.name} className="flex flex-row items-center">
-          <Link href={link.link}>{link.name}</Link>
-          <ExternalLinkIcon className="ml-1" size={15} />
+          <ExternalLinkIcon className="mr-1" size={15} />
+          <Link href={link.link} target="_blank" className="text-lg">
+            {link.name}
+          </Link>
         </li>
       ))}
     </ul>
