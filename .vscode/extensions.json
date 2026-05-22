@@ -11,6 +11,7 @@
     "christian-kohler.npm-intellisense",
     "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
-    "vitest.explorer"
+    "vitest.explorer",
+    "github.vscode-github-actions"
   ]
 }
